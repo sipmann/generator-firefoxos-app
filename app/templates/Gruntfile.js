@@ -49,8 +49,8 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     {expand: true, cwd: './app/', src: ['*'], dest: './dist/', filter: 'isFile'},
-                    {expand: true, cwd: './app/css', src: ['*'], dest: './dist/css/', filter: 'isFile'}
-                    {expand: true, cwd: './app/images', src: ['*'], dest: './dist/images/', filter: 'isFile'}
+                    {expand: true, cwd: './app/css', src: ['*'], dest: './dist/css/', filter: 'isFile'},
+                    {expand: true, cwd: './app/images', src: ['**/*'], dest: './dist/images/', filter: 'isFile'}
                 ]
             }
         }
