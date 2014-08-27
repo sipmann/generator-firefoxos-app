@@ -50,6 +50,7 @@ module.exports = function(grunt) {
                 files: [
                     {expand: true, cwd: './app/', src: ['*'], dest: './dist/', filter: 'isFile'},
                     {expand: true, cwd: './app/css', src: ['*'], dest: './dist/css/', filter: 'isFile'}
+                    {expand: true, cwd: './app/images', src: ['*'], dest: './dist/images/', filter: 'isFile'}
                 ]
             }
         }
@@ -68,6 +69,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['jshint', 'clean', 'copy', 'uglify']);
 
     grunt.registerTask('test', ['jshint']);
-	
+
 	grunt.registerTask('server', ['connect']);
 };
