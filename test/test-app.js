@@ -19,7 +19,7 @@ describe('yo:app', function () {
 
   it('creates files', function () {
     assert.file([
-      'package.json', 
+      'package.json',
       '.jshintrc'
     ]);
   });
