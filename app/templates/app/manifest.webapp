@@ -1,0 +1,22 @@
+{
+    "version": "1",
+    "name": "<%= nomeApp %>",
+    "launch_path": "/index.html",
+    "description": "<%= descApp %>",
+    "icons": {
+        "16": "images/logo16.png",
+        "32": "images/logo32.png",
+        "48": "images/logo48.png",
+        "64": "images/logo64.png",
+        "128": "images/logo128.png"
+    },
+    "developer": {
+        "name": "<%= devName %>",
+        "url": "https://github.com/<%= devName %>/<%= nomeApp %>"
+    },
+    "installs_allowed_from": ["*"],
+    "default_locale": "pt",
+    "permissions": {
+        "developer": true
+    }
+}
