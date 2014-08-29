@@ -1,4 +1,4 @@
-# generator-firefoxos-app [![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app)
+# generator-firefoxos-app [![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) [![endorse](https://api.coderwall.com/sipmann/endorsecount.png)](https://coderwall.com/sipmann)
 
 > [Yeoman](http://yeoman.io) generator
 
