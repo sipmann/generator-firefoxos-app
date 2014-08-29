@@ -69,5 +69,6 @@ MIT
 
 ## Todo list
 
-* Compress the app to a zip file
+* ~~Compress the app to a zip file~~ (0.1.3)
 * Increment the version of the app at the build process
+* Some css build

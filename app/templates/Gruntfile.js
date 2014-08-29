@@ -9,7 +9,7 @@ module.exports = function(grunt) {
             },
             build: {
                 src: './app/js/*.js',
-                dest: './dist/js/<%= pkg.name %>.min.js'
+                dest: './tmp/js/<%= pkg.name %>.min.js'
             }
         },
         connect: {
@@ -40,17 +40,38 @@ module.exports = function(grunt) {
                     dot: true,
                     src: [
                         './dist',
-                        '.tmp'
+                        './tmp'
                         ]
+                }]
+            },
+            tmp: {
+                files: [{
+                    dot: true,
+                    src: ['./tmp']
                 }]
             }
         },
         copy: {
             main: {
                 files: [
-                    {expand: true, cwd: './app/', src: ['*'], dest: './dist/', filter: 'isFile'},
-                    {expand: true, cwd: './app/css', src: ['*'], dest: './dist/css/', filter: 'isFile'},
-                    {expand: true, cwd: './app/images', src: ['**/*'], dest: './dist/images/', filter: 'isFile'}
+                    {expand: true, cwd: './app/', src: ['*'], dest: './tmp/', filter: 'isFile'},
+                    {expand: true, cwd: './app/css', src: ['*'], dest: './tmp/css/', filter: 'isFile'},
+                    {expand: true, cwd: './app/images', src: ['**/*'], dest: './tmp/images/', filter: 'isFile'}
+                ]
+            }
+        },
+        compress: {
+            main: {
+                options: {
+                    archive: './dist/<%= pkg.name %>.zip'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: './tmp/',
+                        src: ['**/*'],
+                        dest: './'
+                    }
                 ]
             }
         }
@@ -66,7 +87,7 @@ module.exports = function(grunt) {
     /**
     * Tasks
     */
-    grunt.registerTask('default', ['jshint', 'clean', 'copy', 'uglify']);
+    grunt.registerTask('default', ['jshint', 'clean:dist', 'copy', 'uglify', 'compress', 'clean:tmp']);
 
     grunt.registerTask('test', ['jshint']);
 
