@@ -51,11 +51,21 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        cssmin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: './app/css/',
+                    src: ['*.css'],
+                    dest: './tmp/css/'
+                }]
+            }
+        },
         copy: {
             main: {
                 files: [
                     {expand: true, cwd: './app/', src: ['*'], dest: './tmp/', filter: 'isFile'},
-                    {expand: true, cwd: './app/css', src: ['*'], dest: './tmp/css/', filter: 'isFile'},
+                    //{expand: true, cwd: './app/css', src: ['*'], dest: './tmp/css/', filter: 'isFile'},
                     {expand: true, cwd: './app/images', src: ['**/*'], dest: './tmp/images/', filter: 'isFile'}
                 ]
             }
@@ -83,11 +93,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     /**
     * Tasks
     */
-    grunt.registerTask('default', ['jshint', 'clean:dist', 'copy', 'uglify', 'compress', 'clean:tmp']);
+    grunt.registerTask('default', ['jshint', 'clean:dist', 'copy', 'uglify', 'cssmin', 'compress', 'clean:tmp']);
 
     grunt.registerTask('test', ['jshint']);
 

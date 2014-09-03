@@ -50,6 +50,14 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 
 * Gruntfile with some helpful tasks
 
+### 0.1.3
+
+* Compress into a zip file
+
+### 0.1.4
+
+* Compress the css
+
 
 ## Grunt tasks
 
@@ -71,4 +79,4 @@ MIT
 
 * ~~Compress the app to a zip file~~ (0.1.3)
 * Increment the version of the app at the build process
-* Some css build
+* ~~Some css build~~ (0.1.4) - css compress
