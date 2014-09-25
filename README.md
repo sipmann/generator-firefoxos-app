@@ -80,3 +80,4 @@ MIT
 * ~~Compress the app to a zip file~~ (0.1.3)
 * Increment the version of the app at the build process
 * ~~Some css build~~ (0.1.4) - css compress
+* Lesscss
