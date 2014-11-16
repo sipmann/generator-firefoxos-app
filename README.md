@@ -1,6 +1,6 @@
-# generator-firefoxos-app [![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) [![endorse](https://api.coderwall.com/sipmann/endorsecount.png)](https://coderwall.com/sipmann)
+# generator-firefoxos-app
 
-> [Yeoman](http://yeoman.io) generator
+[![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) [ ![Codeship Status for sipmann/generator-firefoxos-app](https://codeship.com/projects/eadf4160-4f6b-0132-885a-12c8946411a5/status)](https://codeship.com/projects/47887)
 
 
 ## Getting Started
