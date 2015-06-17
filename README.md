@@ -1,6 +1,6 @@
 # generator-firefoxos-app
 
-[![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) [ ![Codeship Status for
+[![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) 
 [![Dependency Status](https://david-dm.org/sipmann/generator-firefoxos-app.svg)](https://david-dm.org/sipmann/generator-firefoxos-app)
 
 ## Getting Started
