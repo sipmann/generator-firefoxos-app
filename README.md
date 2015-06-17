@@ -1,7 +1,7 @@
 # generator-firefoxos-app
 
-[![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) [ ![Codeship Status for sipmann/generator-firefoxos-app](https://codeship.com/projects/eadf4160-4f6b-0132-885a-12c8946411a5/status)](https://codeship.com/projects/47887)
-
+[![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) [ ![Codeship Status for
+[![Dependency Status](https://david-dm.org/sipmann/generator-firefoxos-app.svg)](https://david-dm.org/sipmann/generator-firefoxos-app)
 
 ## Getting Started
 
@@ -42,22 +42,6 @@ yo firefoxos-app your-app-name-here
 Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
 
 If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
-
-## Release
-
-### 0.1
-
-* Gruntfile with some helpful tasks
-
-### 0.1.3
-
-* Compress into a zip file
-
-### 0.1.4
-
-* Compress the css
-
 
 ## Grunt tasks
 

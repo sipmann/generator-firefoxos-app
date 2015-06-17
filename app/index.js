@@ -36,7 +36,7 @@ var FirefoxosAppGenerator = yeoman.generators.Base.extend({
       name: 'devName',
       message: 'Developer name',
       default: 'DevDevDev'
-    }];
+  }];
 
     this.prompt(prompts, function (props) {
       this.nomeApp = props.nameApp;
@@ -52,7 +52,7 @@ var FirefoxosAppGenerator = yeoman.generators.Base.extend({
 
       var files   = this.expandFiles('**/*', { cwd: this.sourceRoot(), dot: true });
 
-      this.dest.mkdir('app');
+      this.mkdir('app');
 
       files.forEach(function(file) {
           this.copy(file, file);
