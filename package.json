@@ -1,12 +1,10 @@
 {
   "name": "generator-firefoxos-app",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "An FirefoxOS app generator",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "sipmann/generator-firefoxos-app",
-  "readme": "Just a FirefoxOS App generator",
-  "readmeFile": "README.md",
   "author": {
     "name": "maurício sipmann",
     "email": "sipmann@gmail.com",
@@ -27,7 +25,7 @@
     "app"
   ],
   "dependencies": {
-    "yo": "1.4.7",
+    "yo": "^1.4.7",
     "yeoman-generator": "^0.20.1",
     "chalk": "^1.0.0",
     "yosay": "^1.0.4"

@@ -1,9 +1,11 @@
 # generator-firefoxos-app
 
-[![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app) 
+[![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app)
 [![Dependency Status](https://david-dm.org/sipmann/generator-firefoxos-app.svg)](https://david-dm.org/sipmann/generator-firefoxos-app)
 
 ## Getting Started
+
+Just run `yo firefoxos-app` inside your app folder and have fun
 
 ### What is Yeoman?
 
@@ -52,7 +54,6 @@ If you'd like to get to know Yeoman better and meet some of his friends, [Grunt]
 ## License
 
 MIT
-
 
 ## PS
 
