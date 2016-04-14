@@ -1,10 +1,11 @@
 'use strict';
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
+var mkdirp = require('mkdirp');
 
-var FirefoxosAppGenerator = yeoman.generators.Base.extend({
+var FirefoxosAppGenerator = yeoman.Base.extend({
   constructor: function() {
-    yeoman.generators.Base.apply(this, arguments);
+    yeoman.Base.apply(this, arguments);
 
     this.argument('nomeApp', {desc: 'Name of the app', required: false, defaults: 'YO', optional: true, type: 'String'});
   },
@@ -52,7 +53,7 @@ var FirefoxosAppGenerator = yeoman.generators.Base.extend({
 
       var files   = this.expandFiles('**/*', { cwd: this.sourceRoot(), dot: true });
 
-      this.mkdir('app');
+      mkdirp('app');
 
       files.forEach(function(file) {
           this.copy(file, file);
@@ -62,7 +63,13 @@ var FirefoxosAppGenerator = yeoman.generators.Base.extend({
 
   end: function () {
     if (!this.options['skip-install']) {
-      this.installDependencies();
+      this.installDependencies({
+        bower: false,
+        npm: true,
+        callback: function () {
+          console.log('Everything is ready! keep going');
+        }
+      });
     }
   }
 });
