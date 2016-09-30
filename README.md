@@ -2,7 +2,6 @@
 
 [![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app)
 [![Dependency Status](https://david-dm.org/sipmann/generator-firefoxos-app.svg)](https://david-dm.org/sipmann/generator-firefoxos-app)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sipmann/generator-firefoxos-app/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## Getting Started
 
