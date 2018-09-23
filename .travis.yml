@@ -1,10 +1,6 @@
 language: node_js
 node_js:
-  - v0.10
-  - v0.12
-  - v4
-  - v5
-  - v6
+  - "lts"
 before_install:
   - currentfolder=${PWD##*/}
   - if [ "$currentfolder" != 'generator-firefoxos-app' ]; then cd .. && eval "mv $currentfolder generator-firefoxos-app" && cd generator-firefoxos-app; fi
