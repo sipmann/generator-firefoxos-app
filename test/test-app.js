@@ -1,36 +1,23 @@
-'use strict';
-
-var path = require('path');
-var assert = require('yeoman-assert');
-var helpers = require('yeoman-test');
-var os = require('os');
+const path = require('path');
+const helpers = require('yeoman-test');
+const assert = require('yeoman-assert');
 
 describe('yo:app', function () {
-  before(function (done) {
-    helpers.run(path.join(__dirname, '../app'))
-      .inDir(path.join(os.tmpdir(), './temp-test'))
-      .withOptions({ 'skip-install': true })
-      .withPrompts({
-        nameApp: 'Sipmann App',
-        descApp: 'Not today',
-        devName: 'DevDevDev'
-      })
-      .on('end', done);
+  beforeEach(function () {
+    return helpers.run(path.join(__dirname, '../generators/app'))
+      .withOptions({ nomeApp: 'foo App',
+        devName: 'sipmann',
+        descApp: 'Not today'
+      }); // Mock the prompt answers
   });
 
-  it('creates files', function () {
-    assert.file([
-      'package.json',
-      '.jshintrc'
-    ]);
+  it('creates files', () => {
+    assert.file(['package.json', '.jshintrc' ]);
   });
 
-  it('User input apear in created files', function () {
-    assert.fileContent([
-      ['app/manifest.webapp', '"name": "Sipmann App"'],
-      ['app/manifest.webapp', '"description": "Not today"'],
-      ['app/manifest.webapp', /"developer": {\s+"name": "DevDevDev"/]
-    ]);
+  it('User input apear in created files', () => {
+    assert.jsonFileContent('app/manifest.webapp', {"name": "foo App"});
+    assert.jsonFileContent('app/manifest.webapp', {"description": "Not today"});
   });
 
 });

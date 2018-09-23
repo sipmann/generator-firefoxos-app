@@ -5,11 +5,11 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
             options: {
-                banner: '/* <%= pkg.name %> */\n'
+                banner: '/* <%= nomeApp %> */\n'
             },
             build: {
                 src: './app/js/*.js',
-                dest: './tmp/js/<%= pkg.name %>.min.js'
+                dest: './tmp/js/<%= nomeApp %>.min.js'
             }
         },
         connect: {
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: './dist/<%= pkg.name %>.zip'
+                    archive: './dist/<%= nomeApp %>.zip'
                 },
                 files: [
                     {
