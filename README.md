@@ -3,6 +3,8 @@
 [![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app)
 [![Dependency Status](https://david-dm.org/sipmann/generator-firefoxos-app.svg)](https://david-dm.org/sipmann/generator-firefoxos-app)
 
+Dev deps still no fully updated.
+
 ## Getting Started
 
 Just run `yo firefoxos-app` inside your app folder and have fun
