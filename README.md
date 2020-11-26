@@ -2,6 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/sipmann/generator-firefoxos-app.png?branch=master)](https://travis-ci.org/sipmann/generator-firefoxos-app)
 [![Dependency Status](https://david-dm.org/sipmann/generator-firefoxos-app.svg)](https://david-dm.org/sipmann/generator-firefoxos-app)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=QTKQWWV6RTQP8&item_name=opensource+contribute&currency_code=BRL)
 
 Dev deps still no fully updated.
 
